@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>onclick - jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <h1 id="clickMe">Click Me!</h1>
+
+    <script type="text/javascript">
+
+        // makes sure our webpage(document) is ready for the jQuery/
+        // --Then it runs the function, which has a function with our js/jQuery code
+        //  ---- technically optional
+        $(document).ready(function () {
+
+
+            // when the element with the id "clickMe" is clicked run the function
+            // .on() takes in two arguments, first is what 'operation' its waiting for..
+            //   - the second is what to do... our function
+            $("#clickMe").on("click",
+                function () {
+                    alert("Jquery Did a thing when you clicked on the element");
+                }
+            );
+
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>
