@@ -5,3 +5,48 @@ h1{
 p{
     line-height: 2;
 }
+
+body{
+   background-color: #888;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #eee;
+    padding: 5px;
+}
+#links{
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 17px;
+    left: 1px;
+    top: 1px;
+}
+
+a{
+    text-decoration: none;
+    color: #777777;
+}
+a.visited{
+    color: #777777;
+}
+
+#mainBody{
+    margin-top: 20px;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ccc;
+    padding: 30px;
+}
+
+#box1{
+    line-height: 2;
+    font-size: 20px;
+}
+
+strong{
+    font-weight: bolder;
+}

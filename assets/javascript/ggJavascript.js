@@ -8,16 +8,9 @@ window.onload = function () {
     var userGuesses = " ";
     var letterGuessed = " ";
 
-    // show variables
-    document.getElementById("wins").innerHTML = String(wins);
-    document.getElementById("losses").innerHTML = String(losses);
-    document.getElementById("guessesRemaining").innerHTML = String(guessesLeft);
-    document.getElementById("guessesSoFar").innerHTML = String(userGuesses);
-
     // pick random letter
     letterGuessed = pickRandLetter();
     console.log("My Guess: " + letterGuessed);
-
 
     // this function will run every time we press a key
     document.onkeyup = function (event) {
@@ -36,7 +29,6 @@ window.onload = function () {
                 console.log("---- Correct");
 
                 wins++; // you win!
-
 
                 // reset guesses
                 guessesLeft = 9;
@@ -67,6 +59,8 @@ window.onload = function () {
                     if (guessesLeft < 1) {
 
                         losses++; // you lose!
+                        document.getElementById("lastGuess").innerHTML = String(letterGuessed);
+
 
                         // reset guesses
                         guessesLeft = 9;
@@ -89,7 +83,7 @@ window.onload = function () {
         document.getElementById("losses").innerHTML = String(losses);
         document.getElementById("guessesRemaining").innerHTML = String(guessesLeft);
         document.getElementById("guessesSoFar").innerHTML = String(userGuesses);
-        
+
     } // end onkeyup
 }
 

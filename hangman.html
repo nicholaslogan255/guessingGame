@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/ggCSS.css" />
-    <script src="assets/javascript/ggJavascript.js"></script>
+    <script src="assets/javascript/hangman_js.js"></script>
 </head>
 <body>
 
@@ -20,18 +20,21 @@
     </header>
 
     <div id="mainBody">
-        <h1>The Letter Guessing Game</h1>
+        <h1>Hangman</h1>
         <hr>
-        <p>Guess what letter I am thinking of! Type a letter using the keyboard.</p>
+        <p>Guess what word I am thinking of! Type letters using the keyboard.</p>
 
         <div id="box1">
-        Wins: <span id="wins">0</span> | 
-        Losses: <span id="losses">0</span>
-        <br>
-        Guesses Left: <span id="guessesRemaining">9</span> | Last Guess: <span id="lastGuess"></span>
-        <br>
-        Guesses so far: <strong><span id="guessesSoFar"></span></strong> 
-        </div>
+                Wins: <span id="wins">0</span> | 
+                Losses: <span id="losses">0</span>
+                <br>
+                Guesses Left: <span id="guessesRemaining">9</span> | Last Guess: <span id="lastGuess"></span>
+                <br>
+                Letters Guessed: <strong><span id="guessesSoFar"></span></strong> 
+
+                <br>
+                Word: <span id="partialWord"></span>
+                </div>
         
     </div>
 
