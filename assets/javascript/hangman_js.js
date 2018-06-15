@@ -3,7 +3,7 @@ window.onload = function () {
 
     var wins = 0;
     var losses = 0;
-    var guessesLeft = 9;
+    var guessesLeft = 13;
     var letters = "abcdefghijklmnopqrstuvwxyz";
 
     var hangWord; // stores the partial word with guessed letters
