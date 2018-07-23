@@ -76,7 +76,7 @@ window.onload = function () {
                     document.getElementById("lastGuess").innerHTML = String(wordGuessed);
 
                     // reset guesses
-                    guessesLeft = 9;
+                    guessesLeft = 13;
 
                     // clear old guesses
                     userGuesses = "";
@@ -156,9 +156,10 @@ window.onload = function () {
     function randWord() {
         var words = ["size", "submit", "cent", "awkward","bagpipes","banjo","crypt","dwarves","fishhook",
         "fjord", "haiku", "oxygen", "pajama","yacht", "boxcar",
-        "cobweb", "cycle", "absurd", "buffalo", "facking",
+        "cobweb", "cycle", "absurd", "buffalo", "fracking",
         "abyss","blizzard", "jelly","injury", "jigsaw","jogging",
-        "kayak", "kazoo", "icebox", "keyhole", "microwave"
+        "kayak", "kazoo", "icebox", "keyhole", "microwave","jazz",
+        "garnet","amythest","pearl"
         ];
 
         var output = words[Math.floor(Math.random() * words.length)];
